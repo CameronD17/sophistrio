@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/img/favicon.png">
+
+        <title>Sophistrio - Coming Soon</title>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Noto+Sans" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link href="assets/css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Sophistrio.com</h1>
+                    <h2 class="subtitle">We're building the site right now! It should be ready in</h2>
+                    <div id="countdown"></div>
+                    <h2 class="subtitle">In the meantime, you can check us out on social media</h2>
+                </div>
+            </div>
+            <footer>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://facebook.com/sophistrio" target="_blank" class="btn social-icon" title="Facebook"><i class="fa fa-facebook-official fa-fw"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/sophistrio" target="_blank" class="btn social-icon" title="Twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCcGkI5YvtxSEXQivpe9IbxA" target="_blank" class="btn social-icon" title="YouTube"><i class="fa fa-youtube fa-fw"></i></a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.countdown.min.js"></script>
+        <script type="text/javascript">
+            $('#countdown').countdown('2016/08/01', function(event) {
+                $(this).html(event.strftime('%D days %H hours %M minutes %S seconds'));
+            });
+        </script>
+    </body>
+</html>
