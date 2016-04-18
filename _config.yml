@@ -1,6 +1,6 @@
 # Site settings
 title: Sophistrio
-baseurl: "/labs"
+baseurl: ""
 url: "http://sophistrio.com/"
 permalink: blog/:title/
 excerpt_separator: <!-- Read More -->
