@@ -1,16 +1,15 @@
-/*!
- * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com) 
- * Code licensed under the Apache License v2.0.
- * Modified by Cameron Doyle 2015
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+/*
+Dark teal #007470
+Light teal #31aea9
+Red #fc3b29
+*/
 
 body {
     width: 100%;
     height: 100%;
-    font-family: 'Open Sans',sans-serif;
+    font-family: 'Lato',sans-serif;
     color: #FFFFFF;
-    background-color: #004870;
+    background-color: #007470;
 }
 
 html {
@@ -22,14 +21,6 @@ img {
     width: 100%;
 }
 
-.img-circle {
-    max-height: 180px;
-    max-width: 180px;
-    margin: 0 0 20px 0;
-    display: none;
-    text-align: center;
-}    
-
 h1,
 h2,
 h3,
@@ -38,8 +29,9 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-align: center;
-    text-transform: uppercase;
-    font-family: 'Noto Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*text-transform: uppercase;*/
+    font-variant: small-caps;
+    font-family: 'Volkhov','Helvetica Neue',Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -70,26 +62,13 @@ a:focus {
     text-decoration: none;  
 }
 
-tbody {
-    border-top: none !important;
-}
-
 .emphasis {
     text-align: center;
     font-weight: bold;
 }
 
-.table th {
-    border-bottom: 2px solid rgba(000,000,000,.3) !important;
-}
-
-.table td , .table th{ 
-    border-top: none !important;
-    padding: 2px !important;
-}
-
 .inverted {
-    background-color: #D3D3D3;
+    background-color: #fc3b29;
 }
 
 .inverted h1,
@@ -126,9 +105,9 @@ tbody {
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 2px solid rgba(255,255,255,.3);
-    text-transform: uppercase;
-    font-family: 'Noto Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #1380BC;
+    font-variant: small-caps;
+    font-family: 'Lato','Helvetica Neue',Helvetica,Arial,sans-serif;
+    background-color: #31aea9;
     width: 100%;
 }
 
@@ -136,7 +115,8 @@ tbody {
     margin-top: 40px
 }
 
-.navbar-custom .navbar-brand {
+.navbar-custom .navbar-brand {    
+    font-family: 'Volkhov','Helvetica Neue',Helvetica,Arial,sans-serif;
     z-index: 0;
 }
 
@@ -222,59 +202,17 @@ tbody {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #1380BC;
+        background: #31aea9;
     }
 }
 
 /* Intro Section */
 
-.intro {
-    display: table;
-    width: 100%;
-    height: auto;
-    padding: 200px 0 0 0;
-    color: #FFFFFF;
-    background: url(../img/intro-sm.jpg) no-repeat bottom center scroll;
-    background-color: #004870;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover; 
-}
-
-.intro p,
-.intro a {
-    text-align: center;
-}
-
-.intro .intro-body {
-    display: table-cell;
-    vertical-align: middle;
-    padding-top: 100px;
-}
-
-.intro .intro-body .intro-heading {
-    font-size: 50px;
-    font-weight: 100;    
-    font-family: 'Rock Salt',cursive;
-    text-transform: none;
-}
-
-.intro .intro-body .intro-text {
-    font-size: 20px;    
-}
-
-@media(min-width:768px) {
-    .intro {
-        height: 100%;
-        padding: 0;        
-        background: url(../img/intro.jpg) no-repeat bottom center scroll;
-        background-color: #004870;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
-    }
+.carousel {
+    max-height: 100%;
+    overflow: hidden;
+    padding: 0;
+    border-bottom: 12px solid rgba(255,255,255,.3);
 }
 
 .content-section {
@@ -285,12 +223,16 @@ tbody {
 
 /* About Section */
 
-.abbr {
-    border-bottom:1px dotted #000;
+.img-circle {
+    max-height: 180px;
+    max-width: 180px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.about-img {
-    max-height: 200px;
+.abbr {
+    border-bottom:1px dotted #000;
 }
 
 .about-subtitle {
@@ -312,10 +254,6 @@ tbody {
 }    
 
 @media(min-width:1200px) {
-    .img-circle {
-        display: inline;
-    }
-
     .about-icons p{
         display: inline;
     }
@@ -335,22 +273,22 @@ tbody {
     display: inline-block;
 }
 
-/* Skills Section */
-.skills-tab-collection {
+/* Listen Section */
+.listen-tab-collection {
     border: 0;
     font-size: 15px;
     text-transform: uppercase;
-    font-family: 'Noto Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Lato',"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 500;
     letter-spacing: 1px;
 }
 
-.skills-tab-collection li a:hover{
+.listen-tab-collection li a:hover{
     color: #000000;
     background: transparent;
 }
 
-.skills-list-heading {
+.listen-list-heading {
     margin: 0 0 10px 0px;
     text-align: center;
     text-transform: uppercase;
@@ -358,7 +296,7 @@ tbody {
     letter-spacing: 1px;
 }
 
-.skills-content {
+.listen-content {
     padding: 15px;
 }
 
@@ -375,57 +313,25 @@ tbody {
     color: #000000;
 }
 
-.skills-rating.hidden {
-    display: none;
-}
-
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
     color: #FFFFFF;
-    background-color: #004870;
+    background-color: #31aea9;
 }
 
-@media(max-width:500px) {
-    .skills-experience {
-        display: none;
-    }
-    
-    .skills-rating {
-        text-align: right;
-    }
+.youtube-video {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
 }
 
-/* Experience Section */
-
-.experience-section {
+.youtube-video iframe{
     width: 100%;
-    padding: 0 10px;
-    border-left: 2px solid rgba(255,255,255,0.5);
-    border-right: 2px solid rgba(255,255,255,0.5);
-}
-
-.experience-section p,
-.experience-section h4 {    
-    color: rgba(255,255,255,0.9);
-    font-size: 18px;
-    line-height: 1.5;
-}
-
-.experience-divider{
-    float:left;
-    width:100%;
-    height:2px;
-    background-color:rgba(255,255,255,0.5);
-    margin: 20px 0;
-}
-
-.read-more {
-    font-style: italic;
+    height: 200px;
 }
 
 /* Contact Section & Footer */
-
 
 .control-label {
     font-size: 18px;
@@ -452,19 +358,13 @@ tbody {
     text-decoration: none;  
 }
 
-.email-address {
-    padding-left: 12px;
-    font-size:23px;
-}
-
-
-footer {    
+footer {
     color: rgba(255,255,255,.3);
     padding: 50px 0 50px 0;
 }
 
 .left-footer {
-    width: 100%;    
+    width: 100%;
     text-align: center;
 }
 
@@ -498,11 +398,6 @@ footer {
 
 .fa { 
     display:inline; 
-}
-
-.fa-external-link-square {
-    vertical-align: super;
-    font-size: 80%;
 }
 
 ::-moz-selection {
