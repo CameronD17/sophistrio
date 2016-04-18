@@ -1,0 +1,18 @@
+# Site settings
+title: Sophistrio
+baseurl: ""
+url: "http://sophistrio.com/"
+permalink: blog/:title/
+excerpt_separator: <!-- Read More -->
+
+author:
+    email: sophistrio@gmail.com
+    twitter: sophistrio
+    facebook: sophistrio
+    instagram: sophistrio
+    
+description: > 
+  LUKE PLEASE GIVE ME SOME CONTENT FOR THIS SECTION. 
+  What do you want Google to say about you?
+  
+markdown: kramdown

@@ -1,0 +1,41 @@
+body {    
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.6em;
+    text-align: center;
+    padding: 50px 0;
+    background: url(../img/background.jpg) no-repeat center scroll;    
+    background-color: #004870;
+    width: 100%;    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
+}
+
+h1, li{
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+/* countdown */
+#countdown {
+    font-size: 48px;
+    color: #fff;
+    margin: 50px 0 50px;
+}
+
+.social-icon {
+    font-size: 50px;
+    color: #FFF;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+    color: #D3D3D3;
+    text-decoration: none;  
+}
